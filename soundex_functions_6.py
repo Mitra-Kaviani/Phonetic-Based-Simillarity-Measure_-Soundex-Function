@@ -10,6 +10,6 @@ def Soundex (df):
         df.loc[i,'Soundex1']=en.soundex(str(df.loc[i,n1]),maxlen=4)
         df.loc[i,'Soundex2']=en.soundex(str(df.loc[i,n2]),maxlen=4) 
     return df
-df1 = pd.read_csv('C:/Users/Mitra/Desktop/dataset3_FNS_MITRA - Copy.csv', sep=',', skipinitialspace=True)
+df1 = pd.read_csv('......csv', sep=',', skipinitialspace=True)# path for input csv file that include two strings in forst and second columns
 df1= Soundex (df1)
 print (df1)
